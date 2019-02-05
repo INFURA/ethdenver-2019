@@ -1,7 +1,7 @@
 # EthQL Extended
 
 The extended variant of the EthQL Standard has a reference implementation
-in the [EthQL project](http://github.com/Concensys/ethql). The implementation is
+in the [EthQL project](http://github.com/Consensys/ethql). The implementation is
 a nodeJS middleware server that uses web3.js as an interface into the underlying
 Ethereum node.
 
@@ -24,3 +24,6 @@ EthQL uses web3.js under the hood to query the JSON-RPC. Depending on the call, 
 could be a lot of backend calls against the node. In order to reduce the number of
 calls against the backend node, there is a hard limit to the number of blocks that
 can be returned by the EthQL server.
+
+EthQL extended is currently limited to Query operations only. Mutations are a planned
+addition, but are not currently part of the application

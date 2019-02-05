@@ -11,3 +11,7 @@ EthQL is a GraphQL implementation of Ethereum. In its current implementation,
 EthQL exists in 2 forms: EthQL Simplified and EthQL Extended. Both have advantages
 and disadvantages in choosing which one to use. However, both relay on the power
 of GraphQL to provide a modern development experience when developing a dAPP
+
+## Which one is best
+That all depends on what your use-case is and how you want to run EthQL. Both have
+advantages and disadvantages as can be found in this documentation.
