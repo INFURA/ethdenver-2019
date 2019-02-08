@@ -1,5 +1,5 @@
 This is an example of how to query specifically for accounts. It features all of the fields
-available with some specific arguments
+that can be queried with the Account type with some specific arguments
 
 ```grapql
 {
