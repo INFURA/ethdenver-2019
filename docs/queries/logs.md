@@ -1,4 +1,4 @@
-Query the logs with a filter
+Query the logs with a filter. The filter can take more complex arguments, if you are only interested in pulling logs in a specific block range.
 
 ```graphql
 {

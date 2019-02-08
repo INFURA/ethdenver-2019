@@ -1,4 +1,5 @@
-These are all of the fields available to an account
+This is an example of how to query specifically for accounts. It features all of the fields
+available with some specific arguments
 
 ```grapql
 {

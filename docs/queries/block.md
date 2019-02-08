@@ -1,4 +1,6 @@
-The following is query that uses every field available.
+The following is query that uses every field available on a block. Since there are no arguments
+provided in this block query, it will return the latest known block.
+
 ```graphql
 {
   block {
