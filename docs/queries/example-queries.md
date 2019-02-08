@@ -27,12 +27,12 @@ Fetch all transactions from the latest block, include the gas and gasUsed for th
 
 ```
 
-## Information about transactions in a block
+## Information on transactions in a block
 Get contract and storage data for all transaction receivers in the latest block:
 ```graphql
 {
-  block{
-    transactions{
+  block {
+    transactions {
       to{
         address
         balance
@@ -51,7 +51,7 @@ For all blocks between 3831357 and 3831361 inclusive (5 blocks), get gas usage a
 {
   blocks(from: 3831357, to: 3831361) {
     number
-		timestamp
+    timestamp
     gasUsed
     gasLimit
     transactions {
