@@ -1,6 +1,6 @@
 # EthQL Extended
 
-The extended variant of the EthQL Standard has a reference implementation
+The extended variant of EthQL has a reference implementation
 in the [EthQL project](http://github.com/Consensys/ethql). The implementation is
 a nodeJS middleware server that uses web3.js as an interface into the underlying
 Ethereum node.

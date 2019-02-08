@@ -8,7 +8,7 @@ GraphQL as a query technology [here](https://graphql.org/).
 
 ## Variants
 EthQL is a GraphQL implementation of Ethereum. In its current implementation,
-EthQL exists in 2 forms: EthQL Simplified and EthQL Extended. Both have advantages
+EthQL exists in 2 forms: EthQL Standard and EthQL Extended. Both have advantages
 and disadvantages in choosing which one to use. However, both relay on the power
 of GraphQL to provide a modern development experience when developing a dAPP
 
