@@ -1,0 +1,90 @@
+* [Information on a single block](#information-on-a-single-block)
+* [Information on transactions in a block](#information-on-transactions-in-a-block)
+* [Information on a range of blocks](#information-on-a-range-of-blocks)
+* [Information on an account](#information-on-an-account)
+* [Information on a transaction](#information-on-a-transaction)
+
+## Information on a single block
+Fetch all transactions from the latest block, include the gas and gasUsed for the transaction and some information about the  to and from accounts.
+```graphql
+{
+  block{
+    number
+    transactions {
+      to {
+        address
+        transactionCount
+      }
+      from{
+        address
+        transactionCount
+      }
+      gas
+      gasUsed
+    }
+  }
+}
+
+```
+
+## Information about transactions in a block
+Get contract and storage data for all transaction receivers in the latest block:
+```graphql
+{
+  block{
+    transactions{
+      to{
+        address
+        balance
+        transactionCount
+        code
+        storage(slot:"0x0")
+      }
+    }
+  }
+}
+```
+
+## Information on a range of blocks
+For all blocks between 3831357 and 3831361 inclusive (5 blocks), get gas usage and get the balance of all addresses that sent a transaction.
+```graphql
+{
+  blocks(from: 3831357, to: 3831361) {
+    number
+		timestamp
+    gasUsed
+    gasLimit
+    transactions {
+      from {
+        balance
+      }
+    }
+  }
+}
+```
+
+## Information on an account
+```graphql
+{
+  account(address: "0x78eef34fa547df4c3c35d0750586ee60a33fa942") {
+    address
+    storage(slot: "0x0")
+  }
+}
+
+```
+## Information on a transaction
+Fetch the log topics and data for a particular transaction.
+
+```graphql
+{
+  transaction(hash:"0x3b32b8bd673bda2188cd79369e664d8b5576b12a111a6950449084fe9ef3f53a") {
+    hash
+    logs {
+      topics
+      data
+    }
+  }
+}
+
+```
