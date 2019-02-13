@@ -4,10 +4,17 @@ export default {
   themeConfig: {
     logo: {
       src: '/public/infura_logo_red.png',
-      width: 150
+      width: 100
     },
     colors: {
-      sidebarBg: "#D4D4D4"
+      primary: "#FF6B4A",
+      white: "#f7f7f7",
+      // sidebarBg: "#D4D4D4"
+    },
+    styles: {
+      h1: {
+        fontFamily: '"Poppins" serif'
+      }
     }
   },
   public: './public'
