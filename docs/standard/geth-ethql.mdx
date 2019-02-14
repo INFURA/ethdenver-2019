@@ -1,3 +1,14 @@
+---
+name: Standard Schema
+route: /ethql-standard/schema
+menu: EthQL
+---
+
+The following is the current EthQL schema as proposed via EIP. An initial implementation
+has been incorporated into Geth (1.9).
+
+
+```graphql
 """Account is an Ethereum account at a particular block."""
 type Account {
   """Address is the address owning the account."""
@@ -171,7 +182,7 @@ input BlockFilterCriteria {
   of topics. Topics matches a prefix of that list. An empty element array matches any
   topic. Non-empty elements represent an alternative that matches any of the
   contained topics.
-  
+
   Examples:
    - [] or nil          matches any topic list
    - [[A]]              matches topic A in first position
@@ -255,7 +266,7 @@ input FilterCriteria {
   of topics. Topics matches a prefix of that list. An empty element array matches any
   topic. Non-empty elements represent an alternative that matches any of the
   contained topics.
-  
+
   Examples:
    - [] or nil          matches any topic list
    - [[A]]              matches topic A in first position
@@ -452,4 +463,4 @@ type Transaction {
   """
   logs: [Log!]
 }
-
+```

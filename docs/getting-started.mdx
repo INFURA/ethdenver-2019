@@ -1,7 +1,68 @@
 ---
 name: Getting Started
-route: /getting-started
+route: /
 ---
 # Getting Started
 
-TBD
+## Overview
+Welcome to EthDenver Buidl with EthQL and [Infura](https://infura.io). Getting started with Ethql is easy.
+Depending on how you want to build your application, there are a number of ways to get
+started.
+
+EthQL = Ethereum + GraphQL. The query language provides a schemaful, strongly typed,
+graph relational api to Ethereum data. With a large ecosystem, developers can leverage
+modern tooling to put together their DApps. Head to the [playground](https://ethql-denver.infura.io) and
+start querying immediately. Want to get started buidling now? Follow the directions below to get up and running
+fast!
+
+## Full Decentral'd
+If you already have an Ethereum client running (this could be geth, parity, or even
+a local Truffle instance) follow these directions to get EthQL running locally.
+
+Clone the git repo
+```
+git clone https://github.com/ConsenSys/ethql.git
+```
+
+`cd` into the directory
+```
+cd ethql
+```
+
+Start the EthQL server pointing to the url of the json-rpc.
+```
+yarn dev -j <your_server_url>
+```
+Merry Querying! :rocket:
+
+## No Client; No problem
+If you don't have a node running, but you still want to host EthQL on your local to integrate
+into another backend, follow these directions to get EthQL running.
+
+1. Go to https://infura.io and sign up for an account.
+1. Create a New Project
+1. Copy your project ID
+
+Clone the git repo
+```
+git clone https://github.com/ConsenSys/ethql.git
+```
+
+`cd` into the directory
+```
+cd ethql
+```
+
+Start the EthQL Server using your INFURA_ID
+```
+INFURA_ID="<project_id>" yarn dev
+```
+Merry Querying! :rocket:
+
+## Just let me buidl!
+If you don't want to bother running any of it, no problem!
+
+Head on over to Infura's [hosted EthQL](https://ethql-denver.infura.io) and start
+playing with the GraphiQL playground, or point your client there to start querying.
+
+Merry Querying! :rocket:

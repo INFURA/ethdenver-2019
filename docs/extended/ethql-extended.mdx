@@ -1,3 +1,12 @@
+---
+name: Extended Schema
+route: /ethql-extended/schema
+menu: EthQL
+---
+This following is the definition of the extended schema as defined by the EthQL
+project. This schema is designed to be constantly shifting (yet backwards compatible)
+as a development sandbox for current and future EIPs in the GraphQL topic space.
+```
 """An Ethereum account."""
 type Account {
   """The address of this account"""
@@ -246,7 +255,7 @@ type Log {
 
   """
   The decoded log.
-  
+
   This is a best-effort interpretation of the log data.  There may be cases where a log cannot be unambiguously decoded.
   For example, because some standards share event signatures, a single log may appear to match several different standards.
   """
@@ -257,9 +266,9 @@ type Log {
 input LogFilter {
   """
   Only selects logs that are published under the given topics.
-  
+
   Items within an inner list are combined with an AND, and items on the outer list are combined with OR.
-  
+
   For example: { topics: [["0x1234...", "0xabcd..."], ["0xbcde..."]] } will return all logs published under
   topics "0x1234..." AND "0xabcd...", as well as those published under topic "0xbcde..."
   """
@@ -424,7 +433,7 @@ type Transaction {
 
   """
   The decoded transaction.
-  
+
   This is a best-effort interpretation of the transaction data.  There may be
   cases where a transaction cannot be unambiguously decoded.
   For example, because some standards share function signatures, a single
@@ -536,4 +545,4 @@ enum Unit {
   """
   tether
 }
-
+```

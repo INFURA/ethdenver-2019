@@ -1,0 +1,32 @@
+---
+name: Overview
+route: /ethql
+menu: EthQL
+---
+# EthQL
+
+## Background
+EthQL is a modern API for Ethereum. Originally pioneered and open sourced at Facebook,
+GraphQL is an efficient, extensible, and strongly typed API that is data is rooted
+in graph relationships. You can learn more about GraphQL as a query language and specification
+[here](https://graphql.org/). With EthQL, our aim is to replace JSON-RPC as the standard
+interface into Ethereum
+
+`EthQL = GraphQL + Ethereum`
+
+## The Problem Statement
+The JSON-RPC spec for Ethereum is vague in some areas and silent in others. This has led to
+implementations filling in the blanks. As a spec focussed on simplicity and providing needed
+functionality in an basic way, there is little room for extending JSON-RPC easily. There are paths
+for upgrading the interface, but they ultimately lead to increasing complexity in implementation.
+
+GraphQL provides a modern look on the problems that surface with JSON-RPC and other overlays we have
+tried to stack on top of JSON-RPC such as REST. Built into its design are solutions for extending,
+versioning, paging, validation, read, write, subscription semantics and much more. What follows are
+more details around a fast developing space.
+
+## Variants
+In its current implementation, EthQL has 2 variants: [EthQL Standard](/ethql-standard) and
+[EthQL Extended](/ethql-extended). The 2 variants have overlapping semantics and functionality.
+While they exist as separate variants at this point, the goal is to merge them and have Extended
+exist as a maleable overlay on top of Ethql Standard.
