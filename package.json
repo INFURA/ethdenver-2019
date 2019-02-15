@@ -5,7 +5,6 @@
   },
   "scripts": {
     "build": "yarn docz build; cp -R public .docz/dist; cd .docz && tar -cvzf ../dist.tgz dist",
-    "deploy": "scp dist.tgz kshinn@ethql-denver.infura.io:/var/www"
   },
   "dependencies": {
     "remark-emoji": "^2.0.2"
