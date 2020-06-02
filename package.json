@@ -1,12 +1,12 @@
 {
   "devDependencies": {
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7"
+    "docz": "^2.3.1",
+    "docz-theme-default": "^1.2.0"
   },
   "scripts": {
     "build": "yarn docz build; cp -R public .docz/dist; cd .docz && tar -cvzf ../dist.tgz dist"
   },
   "dependencies": {
-    "remark-emoji": "^2.0.2"
+    "remark-emoji": "^2.1.0"
   }
 }
